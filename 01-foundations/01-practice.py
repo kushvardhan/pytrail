@@ -108,3 +108,70 @@ print(type(a + b))
 # 6
 # 5
 # <class 'int'>
+
+
+# Q3. Identify the data type of each variable
+
+a = [1, 2, 3]
+b = (1, 2, 3)
+c = {1, 2, 3}
+d = {"name": "John"}
+e = None
+f = 3 + 4j
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+
+# Output:
+# <class 'list'>
+# <class 'tuple'>
+# <class 'set'>
+# <class 'dict'>
+# <class 'NoneType'>
+# <class 'complex'>
+
+
+# Q4. Write a program that determines whether a value is an integer, float, or something else
+
+def isInt(num):
+    if type(num) == int:
+        print("int")
+    elif type(num) == float:
+        print("float")
+    else:
+        print("something else")
+
+
+isInt(1)
+isInt(2.33)
+isInt("jsjs")
+isInt(True)
+
+# Output:
+# int
+# float
+# something else
+# something else
+
+
+# Q5. Predict the output
+
+a = [1, 2, 3]
+b = a
+c = a.copy()
+
+b.append(4)
+c.append(5)
+
+print(a)
+print(b)
+print(c)
+
+# Output:
+# [1, 2, 3, 4]
+# [1, 2, 3, 4]
+# [1, 2, 3, 5]
